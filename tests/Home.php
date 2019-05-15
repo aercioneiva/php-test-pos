@@ -54,6 +54,8 @@ class Home {
             ->findElement(WebDriverBy::xpath('/html/body/div[6]/section/header/div[1]/div/div/div'))
             ->getText();
         $this->mensagem = $msg;
+
+        $this->navegador->takeScreenshot('evidencies/screenshot.jpg');
         return $this;
     }
 }

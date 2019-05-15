@@ -49,14 +49,14 @@ class Teste extends TestCase{
     /**
     * @dataProvider dataDoSigninUsingAnExistentUser
     */
-    /*public function testLogin($login,$senha,$msg){
+    public function testLogin($login,$senha,$msg){
       
         $pagina = new Principal($this->navegador);
         $pagina->abrirLogin()
                ->preencherLogin($login, $senha)
                ->efetuarLogin();
         $this->assertEquals($pagina->mensagem, $msg);
-    }*/
+    }
     
 
     /**
@@ -78,6 +78,7 @@ class Teste extends TestCase{
 
         $this->assertEquals($msg, $home->mensagem);
     }
-    //Enviámos um link de ativação para o seu novo e-mail.
+    //Enviámos um link de ativação para o seu novo e-mail.Enquanto você não confirmar o novo, usaremos o seu e-mail antigo!
+
 }
 ?>
